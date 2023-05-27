@@ -1,0 +1,25 @@
+# Blackjack
+
+from os import system
+from art import logo
+
+start = input("Do you want to play a game of Blackjack? Type 'y' or 'n': ")
+
+system('clear')
+
+for i in range(11):
+  print(i)
+
+print(list)
+if start == 'y':
+  print(logo)
+
+print("   Your cards: {},curent score: {} ")
+print("   Computer's first card: {}")
+another_card = input("Type 'y' to get another card, type 'n' to pass: ")
+
+if another_card == 'y':
+
+else:
+  
+  
