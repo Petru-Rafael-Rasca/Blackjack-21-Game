@@ -21,5 +21,3 @@ another_card = input("Type 'y' to get another card, type 'n' to pass: ")
 if another_card == 'y':
 
 else:
-  
-  
