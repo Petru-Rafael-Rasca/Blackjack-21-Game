@@ -3,21 +3,32 @@
 from os import system
 from art import logo
 
-start = input("Do you want to play a game of Blackjack? Type 'y' or 'n': ")
-
-system('clear')
-
-for i in range(11):
-  print(i)
-
-print(list)
-if start == 'y':
-  print(logo)
-
-print("   Your cards: {},curent score: {} ")
-print("   Computer's first card: {}")
-another_card = input("Type 'y' to get another card, type 'n' to pass: ")
-
-if another_card == 'y':
-
-else:
+def game():
+  start = input("Do you want to play a game of Blackjack? Type 'y' or 'n': ")
+  
+  system('clear')
+  
+  print(list)
+  if start == 'y':
+    print(logo)
+  
+  print("   Your cards: {},curent score: {} ")
+  print("   Computer's first card: {} ")
+  another_card = input("Type 'y' to get another card, type 'n' to pass: ")
+  
+  if another_card == 'y':
+    print("   Your cards: {},curent score: {} ")
+    print("   Computer's first card: {} ")
+  else:
+    print("   Your final hand: {}, final score: {}")
+    print("   Computer final hand: {}, final score: {}")
+  
+  print(" You {} \N{slightly smiling face}")
+  play_again = input("Do you want to play another game of Blackjack? Type 'n' or 'y': ")
+  
+  if play_again == 'n':
+    system('clear')
+  else:
+    system('clear')
+    game()
+game()
