@@ -8,7 +8,6 @@ def game():
   
   system('clear')
  
- 
   print(list)
   if start == 'y':
     print(logo)
