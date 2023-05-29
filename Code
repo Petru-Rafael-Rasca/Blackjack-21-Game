@@ -7,7 +7,8 @@ def game():
   start = input("Do you want to play a game of Blackjack? Type 'y' or 'n': ")
   
   system('clear')
-  
+ 
+ 
   print(list)
   if start == 'y':
     print(logo)
